@@ -1,1 +1,80 @@
-/* Add your CSS here */
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a calm, readable font for the entire page */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header / Hero Section */
+header {
+  /* Make header take up full viewport height on desktop */
+  height: 100vh;
+  
+  /* Use flexbox to center all content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Add a background color or image if needed */
+  background-color: #003d82;
+}
+
+/* Container inside header */
+header > div {
+  /* Center text content */
+  text-align: center;
+  
+  /* Add some padding for breathing room */
+  padding: 20px;
+  
+  /* Set max-width so text doesn't stretch too wide */
+  max-width: 600px;
+}
+
+/* Logo sizing */
+header img {
+  /* Set a reasonable size for the logo */
+  width: 200px;
+  height: auto;
+  
+  /* Add some bottom margin for spacing */
+  margin-bottom: 30px;
+}
+
+/* Main heading */
+header h1 {
+  /* Large font size for main headline */
+  font-size: 3rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  /* Display heading in all caps */
+  text-transform: uppercase;
+  /* Set text color to white */
+  color: white;
+}
+
+/* Add decorative line below the heading */
+header h1::after {
+  /* Create a small decorative line */
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: white;
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+/* Subheading / Description */
+header p {
+  /* Medium font size for description */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  /* Set text color to white */
+  color: white;
+}
